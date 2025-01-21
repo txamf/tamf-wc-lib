@@ -116,7 +116,7 @@
     .trigger-cta p {
         margin: 10px 0 10px 0;
         max-width: 600px;
-        font-size: 1.5rem;
+        font-size: 1.8rem;
         line-height: 1.4;
         font-family: inherit;
     }
@@ -130,8 +130,8 @@
     .secondary-cta p {
         margin: 20px 0 0 0;
         max-width: 600px;
-        font-size: 1.2rem;
-        line-height: 1.3;
+        font-size: 1.4rem;
+        line-height: 1.4;
         font-family: inherit;
     }
 
