@@ -5,7 +5,10 @@
       ctaHeading: { type: 'String' },
       ctaText: { type: 'String' },
       ctaButton: { type: 'String' },
-      targetURL: { type: 'String' }
+      targetURL: { type: 'String' },
+      secondaryCtaText: { type: 'String' },
+      secondaryCtaButton: { type: 'String' },
+      secondaryTargetURL: { type: 'String' }
     }
   }}
 />
@@ -17,27 +20,45 @@
         ctaHeading = 'Download a Giving Guide',
         ctaText = 'Download our complimentary Giving Guide to explore giving methods and learn more about campus areas you can support with an endowment', 
         ctaButton = 'Click here to download',
-        targetURL = 'https://www.txamfoundation.com/contact-us/request-a-giving-guide.aspx'
+        targetURL = 'https://www.txamfoundation.com/contact-us/request-a-giving-guide.aspx',
+        secondaryCtaText = 'Ready to start a gift conversation instead?',
+        secondaryCtaButton = 'Send us a message',
+        secondaryTargetURL = 'https://www.txamfoundation.com/contact-us.aspx'
     } = $$props;
     
     function handleClick() {
         window.open(targetURL, '_blank', 'noopener,noreferrer');
     }
+
+    function handleSecondaryClick() {
+        window.open(secondaryTargetURL, '_blank', 'noopener,noreferrer');
+    }
 </script>
 
-<button 
-    type="button"
+<div 
     class="trigger-cta"
-    on:click={handleClick}
-    aria-label={ctaText}
 >   
     <div class="cta-outline"></div>
     <div class="cta-content">
         <h3>{ctaHeading}</h3>
         <p>{ctaText}</p>
     </div>
-    <div class="trigger-button">{ctaButton}</div>
-</button>
+    <button class="trigger-button"
+    type="button"
+    on:click={handleClick}
+    aria-label={ctaText}>{ctaButton}</button>
+    {#if secondaryCtaText !== 'none' && secondaryCtaText !== 'hide'}
+    <div class="secondary-cta">
+        <p>{secondaryCtaText}
+            <button class="secondary-button"
+        type="button"
+        on:click={handleSecondaryClick}
+        aria-label={secondaryCtaText}>{secondaryCtaButton}</button>
+        </p>
+        
+    </div>
+    {/if}
+</div>
 
 <style>
     :host {
@@ -51,7 +72,6 @@
         padding: 30px 20px;
         background: #e6e6e641;
         color: black;
-        cursor: pointer;
         width: 100%;
         border: none;
         margin: 20px -15px 40px;
@@ -99,6 +119,43 @@
         font-size: 1.5rem;
         line-height: 1.4;
         font-family: inherit;
+    }
+
+    .secondary-cta {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .secondary-cta p {
+        margin: 20px 0 0 0;
+        max-width: 600px;
+        font-size: 1.2rem;
+        line-height: 1.3;
+        font-family: inherit;
+    }
+
+    .secondary-button {
+        margin: 3px auto 0px auto;
+        background: none;
+        border: none;
+        color: #3D87CB;
+        cursor: pointer;
+        padding: 0;
+        font-size: 1.2rem;
+        font-family: inherit;
+        text-decoration: underline;
+        text-underline-offset: 4px;
+        transition: color 0.3s ease;
+    }
+
+    .secondary-button:hover {
+        color: #3d86cbb5;
+    }
+
+    .secondary-button:focus-visible {
+        outline: 2px solid #500000;
+        outline-offset: 2px;
     }
 
     @media (max-width: 768px) {
