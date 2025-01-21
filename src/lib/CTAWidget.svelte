@@ -95,7 +95,7 @@
             right: 2%;
         }
         .trigger-cta p {
-        font-size: 1.6rem;
+        font-size: 1.8rem;
     }
     }
 
