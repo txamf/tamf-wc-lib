@@ -114,3 +114,7 @@ And your package.json scripts from:
     <script src="https://cdn.jsdelivr.net/gh/txamf/tamf-wc-lib@main/dist/cta-widget.iife.js"></script>
 ```
 
+npm run build:component --name=CTAWidget
+npm run build:component --name=Sidebar
+npm run build:component --name=SidebarTrigger
+

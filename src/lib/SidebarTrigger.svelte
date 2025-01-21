@@ -53,7 +53,6 @@
         padding: 30px 20px;
         background: #e6e6e641;
         color: black;
-        border-radius: 4px;
         cursor: pointer;
         width: 100%;
         border: none;
@@ -68,7 +67,6 @@
         right: 5%;
         bottom: -20px;
         border: 2px solid #3D87CB;
-        border-radius: 4px;
         pointer-events: none;
     }
 
@@ -100,7 +98,6 @@
         background: #3D87CB;
         color: white;
         border: none;
-        border-radius: 4px;
         cursor: pointer;
         display: inline-block;
         margin: 10px auto 0px auto;

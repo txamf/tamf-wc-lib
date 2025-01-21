@@ -14,9 +14,9 @@
     import { getContext } from 'svelte';
     
     let { 
-        ctaHeading = 'Learn more here',
-        ctaText = 'Open Sidebar', 
-        ctaButton = 'Click Here',
+        ctaHeading = 'Download a Giving Guide',
+        ctaText = 'Download our complimentary Giving Guide to explore giving methods and learn more about campus areas you can support with an endowment', 
+        ctaButton = 'Click here to download',
         targetURL = 'https://www.txamfoundation.com/contact-us/request-a-giving-guide.aspx'
     } = $$props;
     
@@ -69,6 +69,13 @@
         pointer-events: none;
     }
 
+    @media (max-width: 768px) {
+        .cta-outline {
+            left: 2%;
+            right: 2%;
+        }
+    }
+
     .cta-content {
         max-width: 500px;
         margin-right: auto;
@@ -94,12 +101,17 @@
         font-family: inherit;
     }
 
+    @media (max-width: 768px) {
+        .trigger-cta p {
+            font-size: 1.2rem;
+        }
+    }
+
     .trigger-button {
         padding: 10px 20px;
         background: #3D87CB;
         color: white;
         border: none;
-        border-radius: 4px;
         cursor: pointer;
         display: inline-block;
         margin: 10px auto 0px auto;

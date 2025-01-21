@@ -3,17 +3,17 @@ import { svelte } from '@sveltejs/vite-plugin-svelte'
 import { components } from './build.config'
 
 const componentName = process.env.COMPONENT as keyof typeof components
-const entry = componentName
-  ? { [componentName]: components[componentName].entry }
-  : Object.fromEntries(
-      Object.entries(components).map(([name, config]) => [name, config.entry])
-    )
 
 // https://vite.dev/config/
 export default defineConfig({
   build: {
+    emptyOutDir: false,
     lib: {
-      entry,
+      entry: componentName
+        ? { [componentName]: components[componentName].entry }
+        : Object.fromEntries(
+            Object.entries(components).map(([name, config]) => [name, config.entry])
+          ),
       formats: ['iife'],
       name: '[name]Component',
       fileName: (format, entryName) =>
@@ -41,4 +41,4 @@ export default defineConfig({
       }
     })
   ]
-});
+})
