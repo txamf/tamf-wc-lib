@@ -33,6 +33,7 @@
     onclick={toggleSidebar}
     aria-expanded="false"
     aria-controls={targetId}
+    style="font-family: inherit;"
 >   
     <div class="cta-outline"></div>
     <div class="cta-content">
@@ -45,6 +46,7 @@
 <style>
     :host {
         display: contents;
+        font-family: var(--font-family, inherit);
     }
 
     .trigger-cta {
@@ -58,6 +60,7 @@
         border: none;
         margin: 20px -15px 40px;
         transition: background-color 0.3s ease;
+        font-family: inherit;
     }
 
     .cta-outline {
@@ -68,6 +71,19 @@
         bottom: -20px;
         border: 2px solid #3D87CB;
         pointer-events: none;
+    }
+
+    @media (max-width: 768px) {
+        .cta-outline {
+            left: 2%;
+            right: 2%;
+        }
+        .trigger-cta {
+            margin: 20px -10px 40px;
+        }
+        .trigger-cta p {
+            font-size: 1.8rem;
+        }
     }
 
     .cta-content {
@@ -84,13 +100,15 @@
         font-size: 2.5rem;
         margin: 0 0 5px 0;
         color: #500000;
+        font-family: inherit;
     }
     
     .trigger-cta p {
         margin: 10px 0 10px 0;
         max-width: 600px;
-        font-size: 1.5rem;
+        font-size: 1.8rem;
         line-height: 1.4;
+        font-family: inherit;
     }
 
     .trigger-button {
@@ -103,6 +121,8 @@
         margin: 10px auto 0px auto;
         transition: background-color 0.3s ease;
         font-weight: bold;
+        font-family: inherit;
+        font-size: 1rem;
     }
 
     .trigger-button:hover {

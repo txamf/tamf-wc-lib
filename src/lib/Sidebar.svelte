@@ -227,6 +227,7 @@
     :host {
         display: contents;
         --sidebar-z-index: 100000;
+        font-family: var(--font-family, inherit);
     }
 
     .overlay {
@@ -257,6 +258,7 @@
         z-index: calc(var(--sidebar-z-index) + 1);
         overflow-y: auto;
         overscroll-behavior: contain;
+        font-family: inherit;
     }
 
     .sidebar.open {
@@ -274,6 +276,7 @@
         padding: 10px 20px;
         z-index: calc(var(--sidebar-z-index) + 2);
         transition: background-color 0.2s ease;
+        font-family: inherit;
     }
 
     .close-button:hover {
@@ -292,11 +295,14 @@
         padding: 20px;
         padding-top: 30px;
         display: inline-block;
+        font-family: inherit;
     }
     
     .sidebar-content h3 {
         margin-bottom: 4px;
-        font-size: 2rem;
+        font-size: 2.5rem;
+        color: #500000;
+        font-family: inherit;
     }
 
     .sidebarUnderline {
@@ -322,6 +328,9 @@
 
     .sidebarCTA {
         font-style: italic;
+        font-size: 1.4rem;
+        line-height: 1.4;
+        font-family: inherit;
     }
 
     :global(body.sidebar-open) {
