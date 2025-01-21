@@ -161,12 +161,6 @@
         outline-offset: 2px;
     }
 
-    @media (max-width: 768px) {
-        .trigger-cta p {
-            font-size: 1.2rem;
-        }
-    }
-
     .trigger-button {
         padding: 10px 20px;
         background: #3D87CB;
