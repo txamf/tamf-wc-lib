@@ -94,6 +94,9 @@
             left: 2%;
             right: 2%;
         }
+        .trigger-cta p {
+        font-size: 1.6rem;
+    }
     }
 
     .cta-content {
