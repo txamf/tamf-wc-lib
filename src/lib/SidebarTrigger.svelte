@@ -122,7 +122,7 @@
         transition: background-color 0.3s ease;
         font-weight: bold;
         font-family: inherit;
-        font-size: 1rem;
+        font-size: 1.8rem;
     }
 
     .trigger-button:hover {
