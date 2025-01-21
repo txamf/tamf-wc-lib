@@ -42,6 +42,7 @@
 <style>
     :host {
         display: contents;
+        font-family: var(--font-family, inherit);
     }
 
     .trigger-cta {
@@ -55,6 +56,7 @@
         border: none;
         margin: 20px -15px 40px;
         transition: background-color 0.3s ease;
+        font-family: inherit;
     }
 
     .cta-outline {
@@ -81,6 +83,7 @@
         font-size: 2.5rem;
         margin: 0 0 5px 0;
         color: #500000;
+        font-family: inherit;
     }
     
     .trigger-cta p {
@@ -88,6 +91,7 @@
         max-width: 600px;
         font-size: 1.5rem;
         line-height: 1.4;
+        font-family: inherit;
     }
 
     .trigger-button {
@@ -101,6 +105,7 @@
         margin: 10px auto 0px auto;
         transition: background-color 0.3s ease;
         font-weight: bold;
+        font-family: inherit;
     }
 
     .trigger-button:hover {
