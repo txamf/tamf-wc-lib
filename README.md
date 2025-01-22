@@ -110,6 +110,22 @@ And your package.json scripts from:
         ctaText="Download our complimentary Giving Guide to explore giving methods and learn more about campus areas you can support with an endowment."
         ctaButton="Click here to download"
         targetURL="https://www.txamfoundation.com/contact-us/request-a-giving-guide.aspx"
+        secondaryCtaText = "Ready to start a gift conversation instead?"
+        secondaryCtaButton = "Send us a message"
+        secondaryTargetURL = "https://www.txamfoundation.com/contact-us.aspx"
+    ></cta-widget>    
+    <script src="https://cdn.jsdelivr.net/gh/txamf/tamf-wc-lib@main/dist/cta-widget.iife.js"></script>
+```
+### CTA Widget - No secondary
+```html
+    <cta-widget
+        ctaHeading="Download a Giving Guide"
+        ctaText="Download our complimentary Giving Guide to explore giving methods and learn more about campus areas you can support with an endowment."
+        ctaButton="Click here to download"
+        targetURL="https://www.txamfoundation.com/contact-us/request-a-giving-guide.aspx"
+        secondaryCtaText = "hide"
+        secondaryCtaButton = "Send us a message"
+        secondaryTargetURL = "https://www.txamfoundation.com/contact-us.aspx"
     ></cta-widget>    
     <script src="https://cdn.jsdelivr.net/gh/txamf/tamf-wc-lib@main/dist/cta-widget.iife.js"></script>
 ```
