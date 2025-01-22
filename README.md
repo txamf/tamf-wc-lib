@@ -103,9 +103,9 @@ And your package.json scripts from:
 ```
 
 ## Component Usage
-
+### CTA Widget
 ```html
-<cta-widget
+    <cta-widget
         ctaHeading="Download a Giving Guide"
         ctaText="Download our complimentary Giving Guide to explore giving methods and learn more about campus areas you can support with an endowment. Ready to start a gift conversation instead? Send us a message at info@txamfoundation.com."
         ctaButton="Click here to download"
