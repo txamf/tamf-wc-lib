@@ -95,7 +95,7 @@
             right: 2%;
         }
         .trigger-cta p {
-        font-size: 1.8rem;
+        font-size: 18px;
     }
     }
 
@@ -110,7 +110,7 @@
     }
 
     .trigger-cta h3 {
-        font-size: 2.5rem;
+        font-size: 24px;
         margin: 0 0 5px 0;
         color: #500000;
         font-family: inherit;
@@ -119,7 +119,7 @@
     .trigger-cta p {
         margin: 10px 0 10px 0;
         max-width: 600px;
-        font-size: 1.8rem;
+        font-size: 18px;
         line-height: 1.4;
         font-family: inherit;
     }
@@ -133,7 +133,7 @@
     .secondary-cta p {
         margin: 20px 0 0 0;
         max-width: 600px;
-        font-size: 1.4rem;
+        font-size: 14px;
         line-height: 1.4;
         font-family: inherit;
     }
@@ -145,7 +145,7 @@
         color: #3D87CB;
         cursor: pointer;
         padding: 0;
-        font-size: 1.2rem;
+        font-size: 14px;
         font-family: inherit;
         text-decoration: underline;
         text-underline-offset: 4px;
