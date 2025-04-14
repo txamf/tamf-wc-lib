@@ -329,12 +329,12 @@
   
     .card-header {
       background-color: #e6e6e641;
-      height: 6rem;
+      height: 4rem;
       width: 100%;/* padding: 1rem; */
     }
   
     .icon {
-      font-size: 4.5rem;
+      font-size: 2.5rem;
       width: 2.5rem;
       height: 2.5rem;
       display: flex;
@@ -342,12 +342,12 @@
       justify-content: center;
       border-radius: 50%;
       margin-bottom: 2rem;
-      margin-top: -2.25rem;
+      margin-top: -3rem;
       margin-left: 1rem;
     }
   
     .year {
-      font-size: 5.5rem;
+      font-size: 3rem;
       color: #3D87CB;
       font-weight: 900;
       margin: 0;
@@ -360,10 +360,10 @@
     }
   
     .title {
-      font-size: 2rem;
+      font-size: 1.25rem;
     color: #373A36;
     margin: 0.5rem 0 0.25rem 0;
-    padding-left: 1.3rem;
+    padding-left: 1rem;
     margin-left: -1rem;
     border-left: 8px solid #500000;
     line-height: 1.2;
@@ -373,12 +373,12 @@
   
     .description {
       color: #666;
-    font-size: 1.5rem;
+    font-size: 1rem;
     line-height: 1.4;
     padding-left: 1rem;
     margin: 0;
-    margin-left: .2rem;
-    margin-top: .35rem;
+    margin-left: -.45rem;
+        margin-top: .35rem;
     }
   
     .navigation {
