@@ -1,6 +1,6 @@
 <script lang="ts">
   import { onMount } from 'svelte';
-  import UnifiedTimeline from './lib/timeline.svelte';
+  import MomTimeline from './lib/mom-timeline.svelte';
   
   // Default timeline events
   const timelineEvents = [
@@ -51,7 +51,7 @@
   <h1>Mom Claghorn's Life Timeline</h1>
   
   <div class="timeline-container">
-    <UnifiedTimeline events={timelineEvents} />
+    <MomTimeline events={timelineEvents} />
   </div>
 </main>
 
